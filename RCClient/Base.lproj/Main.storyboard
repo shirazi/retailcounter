@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="99x-lE-lp7">
+                                <rect key="frame" x="270" y="381" width="61" height="134"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="112"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rc_logo" translatesAutoresizingMaskIntoConstraints="NO" id="h9F-OE-Bkg">
+                                <rect key="frame" x="237" y="55" width="125" height="96"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="total_count_text" translatesAutoresizingMaskIntoConstraints="NO" id="yar-t1-utO">
+                                <rect key="frame" x="237" y="360" width="126" height="13"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.054901960784313725" green="0.53725490196078429" blue="0.73725490196078436" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="h9F-OE-Bkg" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="35" id="4kW-c5-I4R"/>
+                            <constraint firstItem="yar-t1-utO" firstAttribute="top" secondItem="h9F-OE-Bkg" secondAttribute="bottom" constant="209" id="7OR-SW-Ngp"/>
+                            <constraint firstItem="99x-lE-lp7" firstAttribute="top" secondItem="yar-t1-utO" secondAttribute="bottom" constant="8" id="FzQ-7h-8m3"/>
+                            <constraint firstAttribute="centerX" secondItem="yar-t1-utO" secondAttribute="centerX" id="ctJ-a7-JMB"/>
+                            <constraint firstAttribute="centerX" secondItem="99x-lE-lp7" secondAttribute="centerX" id="ngA-d8-wZO"/>
+                            <constraint firstAttribute="centerX" secondItem="h9F-OE-Bkg" secondAttribute="centerX" id="rXW-u0-mKV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countNumberLabel" destination="99x-lE-lp7" id="w42-kg-VSF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rc_logo" width="125" height="96"/>
+        <image name="total_count_text" width="126" height="13"/>
+    </resources>
+</document>
